@@ -23,7 +23,7 @@ nav .logo{
 }
 nav ul{
     list-style: none;
-    float: right;
+    float:none;
     margin: 0;
     padding:0;
     display: flex;
@@ -50,6 +50,22 @@ section{
     background-size: cover;
     background-position: center;
 
+}
+.descripcion{
+    position: absolute;
+    top: 82.5%;
+    width: 100%;
+    height: 140px;
+    display: block;
+    background: rgba(0,0,0,0.6);
+    box-sizing: border-box;
+    border-top:1px solid #fff;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left:10px;
+    font-weight:lighter;
+    text-transform: uppercase;
+    color: #fff;
 }
 /*li{
     display: inline-block;
