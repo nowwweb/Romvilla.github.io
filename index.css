@@ -9,7 +9,7 @@ nav {
     top:0;
     left: 0;
     width: 100%;
-    height: 120px;
+    height: 150px;
     padding: 10px 90px;
     background: rgba(0,0,0,0.6);
     box-sizing: border-box;
@@ -21,6 +21,13 @@ nav .logo{
     width: 10px;
     height: 10px;
 }
+.icono{
+    margin-top: -75px;
+    margin-left: -100px;
+    width: 400px;
+    height: auto;
+    display:inline;
+}
 nav ul{
     list-style: none;
     float:none;
@@ -31,17 +38,34 @@ nav ul{
     align-items: center;
 }
 nav ul li a {
-    line-height: 80px;
+    line-height: 140px;
     color: #fff;
-    padding:12px 30px;
+    padding:12px 25px;
     text-decoration: none;
-    font-size:20px;
+    font-size:25px;
     font-weight: bold;
     text-transform: uppercase;
 }
 nav ul li a:hover {
-    background: rgba(0,0,0,0.7);
+    background: red;
     border-radius: 6px;
+    transition: .3s;
+}
+li a.active, li a:hover{
+    background-color: red;
+    transition: .5s;
+} 
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
 }
 section{
     width: 100%;
@@ -68,64 +92,104 @@ section{
 }
 /* controles responsivos */
 @media screen and (max-width:980px) {
-    section{
-        width: 100%;
-        height: 100vh;
-        background: url(foto\ puerto\ industrial.jpg);
-        background-size: cover;
-        background-position:79%;
+section{
+    width: 100%;
+    height: 100vh;
+    background: url(foto\ puerto\ industrial.jpg);
+    background-size: cover;
+    background-position:79%;
+}
+nav {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    border-bottom:1px solid #fff;
+}
+nav ul{
+    list-style: none;
+    float:right;
+    margin-left:15px;
+    display:block;
+    justify-content: center;
+    align-items: center;
     }
-    nav {
-        position: fixed;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 60px;
-        padding: 10px 10px;
-        background: rgba(0,0,0,0.6);
-        box-sizing: border-box;
-        border-bottom:1px solid #fff;
+nav ul li a {
+    line-height: 40px;
+    color: #0e0d0d;
+    padding:12px 10px;
+    text-decoration: none;
+    font-size:8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    }  
+nav ul li a:hover {
+    background:rgb(247, 247, 243);
+    border-radius: 6px;
+}
+.icono{
+    float: left;
+    width: 120px;
+    height: auto;
+    padding: 0;
+    margin: -24px -20px;
+}
+.enlace{
+    padding-left: 10px;
     }
-    nav ul{
-        list-style: none;
-        float:right;
-        margin-left:15px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-        nav ul li a {
-            line-height: 40px;
-            color: #fff;
-            padding:12px 10px;
-            text-decoration: none;
-            font-size:8px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }  
-        nav ul li a:hover {
-            background: rgba(0,0,0,0.7);
-            border-radius: 6px;
-        }
-        .icono{
-            float: left;
-            width: 50px;
-            height: 50px;
-            padding: 0;
-            margin: -5px 2px;
-        }
-        .descripcion{
-            position: absolute;
-            top:79%;
-            width: 100%;
-            height: 150px;
-            display: block;
-            background: rgba(0,0,0,0.6);
-            box-sizing: border-box;
-            border-top:1px solid #fff;
-            font-size:12px;
-            font-family:Arial, Helvetica, sans-serif;
-            padding-left:10px;
-            font-weight:lighter;
-            color: #fff;
+.checkbtn{
+    display: block;
+    font-size: 25px;
+    float: right;
+    line-height: 42px;
+    margin-right:20px;
+}
+ul{
+    position: fixed;
+    width: 100%;
+    height:75vh;
+    background: rgba(248, 246, 246, 0.4);
+    top: 60px;
+    left: -110%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    transition: all .5s;
+}
+nav ul li{
+    display: block;
+    margin:50px 0;
+    line-height: 25px;
+}
+nav ul li a {
+    font-size: 20px;
+}
+nav li a:hover,li a.active{
+    background:rgb(255, 1, 1);
+    color: black;
+    border-radius: 6px;
+}
+#check:checked ~ ul {
+    left:-15px; 
+} 
+.descripcion{
+    position: absolute;
+    top:79%;
+    width: 100%;
+    height: 150px;
+    display: block;
+    background: rgba(0,0,0,0.6);
+    box-sizing: border-box;
+    border-top:1px solid #fff;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left:10px;
+    font-weight:lighter;
+    color: #fff;
+}
+
 }
