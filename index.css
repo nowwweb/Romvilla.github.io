@@ -251,7 +251,7 @@ ul{
     height:64vh;
     background: rgba(8, 8, 8, 0.4);
     top: 86px;
-    right: 18px;
+    right:0px;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -272,7 +272,7 @@ nav li a:hover,li a.active{
     border-radius: 6px;
 }
 #check:checked ~ ul {
-    right:-115px; 
+    right:-116px; 
 } 
 .descripcion{
     position: absolute;
