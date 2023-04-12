@@ -330,13 +330,15 @@ h6{
     display:inline;
 
 }
+
+/*caja que aparece al apretar el boton home*/
 ul{
     position: fixed;
     width: 28%;
     height:65vh;
     background: rgba(8, 8, 8, 0.4);
     top: 86px;
-    right:0px;
+    right: -110px;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -357,7 +359,7 @@ nav li a:hover,li a.active{
     border-radius: 6px;
 }
 #check:checked ~ ul {
-    right:-116px; 
+    right: 0px; 
 } 
 .descripcion{
     position: absolute;
