@@ -24,8 +24,8 @@ nav .logo{
     height: 4px;
 }
 .icono{
-    margin-top: -42px ;
-    width: 190px;
+    margin-top: -35px ;
+    width: 170px;
     height: auto;
     display:inline;
 }
@@ -138,37 +138,81 @@ section{
     margin: 0;
     margin-top: -220px;
 }
+
+/* nuestra historia */
+
 .nuestra-historia{
     width: 100%;
     height: 65px;
-    background: #fff;
-    margin-top: 0px;
+    line-height: 65px;
+    background-image:url(fondoencabezado.png);
+    margin-top: -32px;
+    font-family: 'Chakra Petch', sans-serif;
+    color: blanchedalmond;
+    font-size: 28px;
+    text-align: center;
 }
+.nuestra-historia img{
+    height: 50px;
+    display: flex;
+    margin: -90px 0 0 65px;
+}
+/* servicios */
+.servicios{
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    margin-top: -320px;
+    background-image:url(fondoencabezado.png);
+    font-family: 'Chakra Petch', sans-serif;
+    color: blanchedalmond;
+    font-size: 28px;
+    text-align: center;
+
+}
+.servicios img{
+    height: 50px;
+    display: flex;
+    margin: -90px 0 0 65px;
+}
+
 /* bloque de historia */
+
 .historia1{
     position: relative;
-    top: 0vw;
-    background:rgba(0, 0, 0, 0.4);
+    margin-left: 10px;
+    top: 3vw;
     width: 50vw;
+    line-height: 25px;
 }
-.historia1 .imagenllamadacelular img{
+.historia1 .obrero-portuario img{
     position: absolute;
-    width: 17vw;
-    height: 11.7vw;
-    margin:0;
+    width: 33vw;
+    height: 25vw;
+    margin-top:0px;
     left: 32vw;
     padding: 0;
     border-radius: 10px;
-
+    text-align: center;
+}
+.historia1 span{
+    font-size:40px;
+    text-decoration: solid;
+    font-family: 'Chakra Petch', sans-serif;
 }
 .historia2{
     position: relative;
-    top: -12vw;
-    left: 50vw;
-    background:rgba(0, 0, 0, 0.4);
-    width: 50vw;
+    top: -22vw;
+    left: 67vw;
+    width: 31vw;
+    line-height:25px;
 }
-.historia2 .imagenllamadacelular img{
+.historia2 span{
+    font-size:40px;
+    text-decoration: solid;
+    font-family: 'Chakra Petch', sans-serif;
+}
+/*.historia2 .imagenllamadacelular img{
     position: absolute;
     float: left;
     width: 17vw;
@@ -176,38 +220,39 @@ section{
     margin:0;
     padding: 0;
     border-radius: 10px;
-}
+} */
 .descripcion1{
     position: relative;
-    width: 32vw;
-    height: 12vw;
+    width: 30vw;
+    height: 25vw;
     display:inline-block;
-    background: rgba(0,0,0,0.5);
     box-sizing: border-box;
-    font-size:16px;
+    font-size:14px;
     font-family: 'Dosis', sans-serif;
     padding:0;
     font-weight:lighter;
-    color: #fff;
+    color: rgb(224, 218, 218);
     margin: 0;
+    border-radius: 10px red;
 }
 .descripcion2{
     position: relative;
-    left: 17vw;
-    width: 33vw;
-    height: 12vw;
+    width: 30vw;
+    height: 25vw;
     display:inline-block;
-    background: rgba(0,0,0,0.5);
     box-sizing: border-box;
-    font-size:16px;
+    font-size:14px;
     font-family:'Dosis', sans-serif;
-    padding:0;
     font-weight:lighter;
-    color: #fff;
+    color: rgb(224, 218, 218);
     margin: 0;
+    padding:0;
+    border-radius: 10px;
 }
+
 p{
-    margin: 25px 0 0 5px;
+    margin: 5px 0 0 5px;
+    border-color: red;
 }
 /* controles responsivos */
 @media screen and (max-width:980px) {
