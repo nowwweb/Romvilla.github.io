@@ -8,15 +8,14 @@ body{
 }
 nav {
     position: fixed;
-    top:0;
-    left: 0;
     width: 100%;
     height: 75px;
-    padding: 10px 0 0 0;
-    background-color: #0e0d0d;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     border-bottom:1px solid #fff;
     z-index: 1000;
+    background: rgba(0, 0, 0, 0.7);
 
 }
 nav .logo{
@@ -25,16 +24,15 @@ nav .logo{
     height: 4px;
 }
 .icono{
-    margin-top: -35px ;
-    width: 170px;
+    margin-top: -23px ;
+    width: 168px;
     height: auto;
     display:inline;
 }
 nav ul{
     list-style: none;
     float:none;
-    margin: 0;
-    margin-top: -15px;
+    margin-top: 1px;
     padding:0;
     display: flex;
     justify-content: center;
@@ -42,7 +40,7 @@ nav ul{
 }
 nav ul li a {
     line-height: 85px;
-    color: #fff;
+    color: white;
     padding:5px 35px;
     text-decoration: none;
     font-size:14px;
@@ -123,27 +121,25 @@ h2{
     }
 }
 .bajo-encabezado{
-    width: 100%;
+    width: 100vw;
     height: 100%;
     padding: 0;
-    margin: -60px 0 0 0;
+    margin: -90px 0 0 0;
 }
 
 section{
-    width: 100%;
+    width: 100vw;
     height: 55vh;
     background: url(puerto\ imagen\ central.jpg);
     background-size: cover;
-    background-position-y: 50%;
     padding: 0;
     margin: 0;
-    margin-top: -220px;
 }
 
 /* nuestra historia */
 
-.nuestra-historia{
-    width: 100%;
+.historiabtn{
+    width: 100vw;
     height: 65px;
     line-height: 65px;
     background-image:url(fondoencabezado.png);
@@ -153,17 +149,17 @@ section{
     font-size: 28px;
     text-align: center;
 }
-.nuestra-historia img{
-    height: 50px;
+.historiabtn img{
+    height: 40px;
     display: flex;
-    margin: -90px 0 0 65px;
+    margin: -85px 0 0 65px;
 }
 /* servicios */
-.servicios{
-    width: 100%;
+.serviciosbtn{
+    width: 100vw;
     height: 65px;
     line-height: 65px;
-    margin-top: -320px;
+    margin-top: 0;
     background-image:url(fondoencabezado.png);
     font-family: 'Chakra Petch', sans-serif;
     color: blanchedalmond;
@@ -171,15 +167,16 @@ section{
     text-align: center;
 
 }
-.servicios img{
-    height: 50px;
+.serviciosbtn img{
+    height: 40px;
     display: flex;
-    margin: -90px 0 0 65px;
+    margin: -85px 0 0 65px;
 }
 /* clientes */
-.clientes{
-    width: 100%;
+.clientesbtn{
+    width: 100vw;
     height: 65px;
+    margin-top: 0;
     line-height: 65px;
     background-image:url(fondoencabezado.png);
     font-family: 'Chakra Petch', sans-serif;
@@ -187,14 +184,14 @@ section{
     font-size: 28px;
     text-align: center;
 }
-.clientes img{
-    height: 50px;
+.clientesbtn img{
+    height: 40px;
     display: flex;
-    margin: -90px 0 0 65px;
+    margin: -85px 0 0 65px;
 }
-/* clientes */
+/* contacto */
 .contacto{
-    width: 100%;
+    width: 100vw;
     height: 65px;
     line-height: 65px;
     background-image:url(fondoencabezado.png);
@@ -204,169 +201,173 @@ section{
     text-align: center;
 }
 .contacto img{
-    height: 50px;
+    height: 40px;
     display: flex;
-    margin: -90px 0 0 65px;
+    margin: -85px 0 0 65px;
 }
 
-/* bloque de historia */
+/* bloque de historia inicio*/
 
-.historia1{
-    position: relative;
-    margin-left: 10px;
-    top: 3vw;
-    width: 50vw;
-    line-height: 25px;
-}
-.historia1 .obrero-portuario img{
-    position: absolute;
+.historia{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+ }
+.historia .obrero-portuario img{
+    display: inline-block;
     width: 33vw;
     height: 25vw;
-    margin-top:0px;
-    left: 32vw;
     padding: 0;
     border-radius: 10px;
-    text-align: center;
-}
-.historia1 span{
+    margin: 15px 20px;
+} 
+.historia span{
     font-size:40px;
     text-decoration: solid;
     font-family: 'Chakra Petch', sans-serif;
 }
-.historia2{
-    position: relative;
-    top: -22vw;
-    left: 67vw;
-    width: 31vw;
-    line-height:25px;
-}
-.historia2 span{
-    font-size:40px;
-    text-decoration: solid;
-    font-family: 'Chakra Petch', sans-serif;
-}
-.historia3{
-    display: flex;
-    margin-top: 10px;
-}
-.historia3 span{
-    font-size:40px;
-    text-decoration: solid;
-}
-.historia3 .llamada-celular img{
-    display: inline-block;
-    width: 33vw;
-    height: 25vw;
-    margin-top:0px;
-    left: 32vw;
-    padding: 0;
-    border-radius: 10px;
-    text-align:left;
-} 
-.historia3 .puerto-lejos img{
-    display: inline-block;
-    width: 33vw;
-    height: 25vw;
-    left: 35vw;
-    padding: 0;
-    border-radius: 10px;
-} 
-.historia4{
-    display: flex;
-    margin-top: 10px;
-}
-.historia4 .marcasconfian img{
-    display: inline-block;
-    width: 10vw;
-    height: 7vw;
-    margin:10px 28px;
-    padding: 0;
-    border-radius: 10px;
-    text-align:left;
-} 
-
-.descripcion1{
-    position: relative;
+.historiadescripcion1{
     width: 30vw;
-    height: 25vw;
     display:inline-block;
     box-sizing: border-box;
-    font-size:14px;
+    font-size:16px;
     font-family: 'Dosis', sans-serif;
-    padding:0;
     font-weight:lighter;
     color: rgb(224, 218, 218);
-    margin: 0;
-    border-radius: 10px red;
+    margin-top: -15px;
+    line-height: 24px;
+    text-align: justify;
+
 }
-.descripcion2{
-    position: relative;
+.historiadescripcion2{
     width: 30vw;
-    height: 25vw;
     display:inline-block;
     box-sizing: border-box;
-    font-size:14px;
-    font-family:'Dosis', sans-serif;
+    font-size:16px;
+    font-family: 'Dosis', sans-serif;
     font-weight:lighter;
     color: rgb(224, 218, 218);
-    margin: 0;
-    padding:0;
+    margin-top: -15px;
+    line-height: 24px;
+    text-align: justify;
+}
+/* bloque de historia fin*/
+
+/* bloque de servicios inicio*/
+.servicios{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+.servicios span{
+    font-size:40px;
+    text-decoration: solid;
+}
+.servicios .llamada-celular img{
+    display: inline-block;
+    width: 33vw;
+    height: 25vw;
+    margin-top:30px;
     border-radius: 10px;
-}
-.descripcion3{
-    position: relative;
-    width: 30vw;
-    height: 25vw;
+} 
+.serviciosdescripcion{
     display:inline-block;
     box-sizing: border-box;
-    font-size:14px;
+    font-size:16px;
     font-family:'Dosis', sans-serif;
     font-weight:lighter;
     color: rgb(224, 218, 218);
-    margin: 7px 16px 0 16px;
+    margin:-30px 15px;
     padding:0;
     border-radius: 10px;
     line-height: 25px;
 }
-.descripcion4{
+.servicios .puerto-lejos img{
+    display: inline-block;
+    width: 33vw;
+    height: 25vw;
+    margin-top:30px;
+    border-radius: 10px;
+} 
+/* bloque de servicios fin*/
+
+/* bloque de clientes inicio*/
+.clientes{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+
+}
+.clientes .marcasconfian img{
+    display: inline-block;
+    width: 5.5vw;
+    height: 3.5vw;
+    margin:15px 25px;
+    padding: 0;
+    border-radius: 10px;
+    text-align:left;
+    border: none;
+    border:1px solid transparent;
+} 
+.clientes .marcasconfian img:hover{
+    width: 8.2vw;
+    height: 5.2vw;
+    margin:0;
+    padding: 0;
+    box-shadow:0px 0px 5px 3px rgb(226, 43, 43);
+}
+/* bloque de clientes fin*/
+
+/* bloque de contactos inicio*/
+.contactodescripcion{
     position: relative;
     width: 100vw;
-    height: 25vw;
+    height: 15vw;
     display:inline-block;
     box-sizing: border-box;
     font-size:14px;
     font-family:'Dosis', sans-serif;
     font-weight:lighter;
     color: rgb(224, 218, 218);
-    margin: 7px 16px 0 16px;
     padding:0;
-    border-radius: 10px;
-    line-height: 25px;
+    background: black;
 }
-.descripcion4 i{
-font-size: 50px;
-margin: 20px 200px;
+.contactodescripcion i{
+font-size: 45px;
+margin: 60px 200px 20px;
 text-align: center;
+justify-content: center;
+
 }
-.descripcion4 p{
+.contactodescripcion i:hover{
+color: red;
+
+}
+.contactodescripcion p{
     width: 25vw;
     display: inline-block;
-    margin: 20px 50px;
-    font-size: 20px;
+    margin: 0px 50px;
+    font-size: 17px;
     text-align: center;
+    justify-content: center;
+ 
     }
-
-p{
-    margin: 5px 0 0 5px;
-    border-color: red;
+.piepagina {
+padding: 0;
+margin: 0;
 }
 footer{
-    color: black;
-    background: #fff;
-    height: 50px;
-    margin: 0;
+    color: white;
+    margin:0;
     padding: 0;
+    font-size:16px;
+    font-family:'Dosis', sans-serif;
+    justify-content: center;
+    text-align: center;
+    text-decoration: overline;
 }
+
+/* bloque de contactos fin*/
 /* controles responsivos */
 @media screen and (max-width:980px) {
 .bajo-encabezado{
