@@ -138,7 +138,7 @@ section{
 
 /* nuestra historia */
 
-.historiabtn{
+.navencabezados{
     width: 100vw;
     height: 65px;
     line-height: 65px;
@@ -149,7 +149,7 @@ section{
     font-size: 28px;
     text-align: center;
 }
-.historiabtn img{
+.navencabezados img{
     height: 40px;
     display: flex;
     margin: -85px 0 0 65px;
@@ -374,7 +374,7 @@ footer{
         width: 100%;
         height: 100%;
         padding: 0;
-        margin: 80px 0 0 0;
+        margin:57px 0 0 0;
     background-size: cover;
 }
 nav {
@@ -383,6 +383,7 @@ nav {
     left: 0;
     width: 100%;
     height: 60px;
+    z-index: 10;
     padding:0;
     background: rgba(0, 0, 0, 0.9);
     box-sizing: border-box;
@@ -458,62 +459,194 @@ nav li a:hover,li a.active{
     right: 0px; 
 } 
 /* bloque de historia */
-.nuestra-historia{
-    width: 100%;
-    height: 18px;
-    background: #fff;
-    margin-top: 0px;
+.navencabezados{
+    width: 100vw;
+    height: 35px;
+    line-height: 40px;
+    background-image:url(fondoencabezado.png);
+    margin-top: -32px;
+    font-family: 'Chakra Petch', sans-serif;
+    color: blanchedalmond;
+    font-size: 18px;
+    text-align: center;
 }
-.historia1{
-    position: relative;
-    top: 0vw;
-    background:rgba(0, 0, 0, 0.4);
-    width: 50vw;
-    left: 10%;
+.navencabezados img{
+    height: 20px;
+    display: flex;
+    margin: -50px 0 0 10px;
 }
-.historia1 .imagenllamadacelular img{
-    position: relative;
-    width: 75%;
-    height:75%;
-    margin:5px 0 0 0;
-    left:-12px;
+
+.historia .obrero-portuario img{
+    display: inline-block;
+    width: 33vw;
+    height: 25vw;
     padding: 0;
     border-radius: 10px;
+    margin: 15px 20px;
+} 
+.historia span{
+    font-size:40px;
+    text-decoration: solid;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.historiadescripcion1{
+    width: 30vw;
+    display:inline-block;
+    box-sizing: border-box;
+    font-size:16px;
+    font-family: 'Dosis', sans-serif;
+    font-weight:lighter;
+    color: rgb(224, 218, 218);
+    margin-top: -15px;
+    line-height: 24px;
+    text-align: justify;
 
 }
-.historia2{
-    position: relative;
-    top: -12vw;
-    left: 50vw;
-    background:rgba(0, 0, 0, 0.4);
-    width: 50vw;
+.historiadescripcion2{
+    width: 30vw;
+    display:inline-block;
+    box-sizing: border-box;
+    font-size:16px;
+    font-family: 'Dosis', sans-serif;
+    font-weight:lighter;
+    color: rgb(224, 218, 218);
+    margin-top: -15px;
+    line-height: 24px;
+    text-align: justify;
 }
-.historia2 .imagenllamadacelular img{
-    position: absolute;
-    float: left;
-    width: 17vw;
-    height: 11.7vw;
-    margin:0;
+/* bloque de historia fin*/
+
+/* bloque de servicios inicio*/
+.serviciosbtn{
+    width: 100vw;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 0;
+    background-image:url(fondoencabezado.png);
+    font-family: 'Chakra Petch', sans-serif;
+    color: blanchedalmond;
+    font-size: 18px;
+    text-align: center;
+
+}
+.serviciosbtn img{
+    height: 20px;
+    display: flex;
+    margin: -50px 0 0 10px;
+}
+.servicios{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+.servicios span{
+    font-size:40px;
+    text-decoration: solid;
+}
+.servicios .llamada-celular img{
+    display: inline-block;
+    width: 33vw;
+    height: 25vw;
+    margin-top:30px;
+    border-radius: 10px;
+} 
+.serviciosdescripcion{
+    display:inline-block;
+    box-sizing: border-box;
+    font-size:16px;
+    font-family:'Dosis', sans-serif;
+    font-weight:lighter;
+    color: rgb(224, 218, 218);
+    margin:-30px 15px;
+    padding:0;
+    border-radius: 10px;
+    line-height: 25px;
+}
+.servicios .puerto-lejos img{
+    display: inline-block;
+    width: 33vw;
+    height: 25vw;
+    margin-top:30px;
+    border-radius: 10px;
+} 
+/* bloque de servicios fin*/
+
+/* bloque de clientes inicio*/
+.clientes{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+
+}
+.clientes .marcasconfian img{
+    display: inline-block;
+    width: 5.5vw;
+    height: 3.5vw;
+    margin:15px 25px;
     padding: 0;
     border-radius: 10px;
-}
-.descripcion{
-    position: absolute;
-    top:516px;
-    width:100%;
-    height:15vh;
-    display: block;
-    background: rgba(3, 3, 3, 1);
-    box-sizing: border-box;
-    border-top:1px solid #fff;
-    color: black;
-    font-size:9px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:lighter;
-    color: #fff;
-    margin: 0;
+    text-align:left;
+    border: none;
+    border:1px solid transparent;
+} 
+.clientes .marcasconfian img:hover{
+    width: 8.2vw;
+    height: 5.2vw;
+    margin:0;
     padding: 0;
+    box-shadow:0px 0px 5px 3px rgb(226, 43, 43);
 }
+/* bloque de clientes fin*/
+
+/* bloque de contactos inicio*/
+.contactodescripcion{
+    position: relative;
+    width: 100vw;
+    height: 15vw;
+    display:inline-block;
+    box-sizing: border-box;
+    font-size:14px;
+    font-family:'Dosis', sans-serif;
+    font-weight:lighter;
+    color: rgb(224, 218, 218);
+    padding:0;
+    background: black;
+}
+.contactodescripcion i{
+font-size: 45px;
+margin: 60px 200px 20px;
+text-align: center;
+justify-content: center;
+
+}
+.contactodescripcion i:hover{
+color: red;
+
+}
+.contactodescripcion p{
+    width: 25vw;
+    display: inline-block;
+    margin: 0px 50px;
+    font-size: 17px;
+    text-align: center;
+    justify-content: center;
+ 
+    }
+.piepagina {
+padding: 0;
+margin: 0;
+}
+footer{
+    color: white;
+    margin:0;
+    padding: 0;
+    font-size:16px;
+    font-family:'Dosis', sans-serif;
+    justify-content: center;
+    text-align: center;
+    text-decoration: overline;
+}
+
 p{
     margin: 5px 5px;
     color: rgb(126, 123, 123);
